@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-size: 20px;
+        }
+        .site-wrap {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .header {
+            height: 250px;
+            color: white;
+            background-color: gray;
+
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0 10px;
+            background-color: yellow;
+            box-sizing: border-box;
+        }
+        .nav ul > li {
+            float: left;
+            width: 150px;
+            padding: 10px 0;
+            background-color: yellow;
+        }
+        .nav ul > li > a {
+            text-decoration: none;
+            color: blue;
+        }
+        .nav ul > li > a:hover {
+            color: orange;
+        }
+        .content {
+            width: 100%;
+        }
+        .sidebar-left {
+            width: 25%;
+            height: 750px;
+            color: white;
+            background-color: grey;
+            padding: 20px;
+            box-sizing: border-box;
+            float: left;
+        }
+        .sidebar-right {
+            width: 25%;
+            height: 750px;
+            color: white;
+            background-color: grey;
+            padding: 20px;
+            float: right;
+            box-sizing: border-box;
+        }
+        .main-content {
+            width: 50%;
+            height: 750px;
+            color: white;
+            background-color: cyan;
+            padding: 20px;
+            box-sizing: border-box;
+            float: left;
+        }
+        .footer {
+            background-color: red;
+            width: 100%;
+            height: 250px;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="site-wrap">
+        <header class="header">
+            <h2>Quán Cafe Âm Nhạc </h2>
+        </header>
+
+        <nav class="nav">
+            <ul class="clearfix">
+                <li><a href="">Trang Chủ</a></li>
+                <li><a href="">Số Điện Thoại</a></li>
+                <li><a href="">Giới thiệu</a></li>
+                <li><a href="">Địa Chỉ</a></li>
+                <li><a href="">Facebook</a></li>
+            </ul>
+        </nav> <!--end .nav-->
+
+        <div class="content clearfix">
+            <aside class="sidebar sidebar-left">
+                <h1>Nội dung phụ của web</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ratione numquam non. Placeat, sequi ut ipsam porro quod voluptatem eius deserunt corrupti iste nisi vitae qui voluptatum? Autem, adipisci quisquam?</p>
+            </aside> <!--end .sidebar-left-->
+
+            <main class="main-content">
+                <h1>Nội dung chính của web</h1>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ab voluptas, dicta quidem numquam nam cumque laborum neque quam unde repellat sequi! Dolores, adipisci? Id, dolorem. Voluptate incidunt est dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ducimus perspiciatis in, ipsam, beatae facere ad quasi dignissimos modi itaque fugit quidem fuga sit tenetur mollitia tempora dolorum minus. Velit.
+                </div>
+            </main> <!--end .main-content-->
+
+            <aside class="sidebar sidebar-right">
+                <h1>Nội dung phụ của web</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, tempora dolores assumenda neque, quo impedit vitae necessitatibus velit, natus reiciendis ad iste in odit facilis asperiores saepe cumque eum voluptas?</p>
+            </aside> <!--end .sidebar-right-->
+
+        </div> <!--end .content-->
+
+        <footer class="footer">
+            <h1>Phần chân của web</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime atque accusamus libero fugit ab incidunt dolorum, facere pariatur voluptates, fuga nostrum itaque eum? Fuga vitae quae iure, doloribus molestiae velit.</p>
+        </footer> <!--end .footer-->
+
+    </div> <!--end .site-wrap-->
+</body>
+</html>
